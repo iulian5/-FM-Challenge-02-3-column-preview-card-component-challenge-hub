@@ -1,0 +1,152 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20vw;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 300px;
+    padding: 50px;
+}
+
+.card:nth-child(1) {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.card:nth-child(2) {
+    background: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.icon {
+    background: rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.card:nth-child(1) .icon:after {
+    content: url(./images/icon-sedans.svg);
+}
+
+.card:nth-child(2) .icon:after {
+    content: url(./images/icon-suvs.svg);
+}
+
+.card:nth-child(3) .icon:after {
+    content: url(./images/icon-luxury.svg);
+}
+
+.title {
+    display: inline-block;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.text {
+    line-height: 25px;
+    margin-bottom: 80px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    background: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: solid 2px hsl(0, 0%, 95%);
+}
+
+.card:nth-child(1) .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) .btn:hover {
+    color: hsl(179, 100%, 13%);
+}
+
+.card:nth-child(1) .btn:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.card:nth-child(2) .btn:hover{
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+
+}
+
+.card:nth-child(3) .btn:hover{
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width:950px) {
+    body {
+        height: auto;
+        padding: 5vh;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card:nth-child(1) {
+        background: hsl(31, 77%, 52%);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;    
+    }
+
+    .card:nth-child(3) {
+        background: hsl(179, 100%, 13%);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+
+}
