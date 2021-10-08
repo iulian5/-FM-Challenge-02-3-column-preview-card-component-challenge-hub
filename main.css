@@ -97,6 +97,10 @@ body {
     border: solid 2px hsl(0, 0%, 95%);
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .card:nth-child(1) .btn {
     color: hsl(31, 77%, 52%);
 }
@@ -148,5 +152,16 @@ body {
         border-bottom-right-radius: 15px;
         border-top-right-radius: 0px;
     }
+}
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #c6c6c6;
+    color: #2a2a2a;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
